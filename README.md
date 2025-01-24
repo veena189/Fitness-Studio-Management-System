@@ -10,7 +10,7 @@ The **Fitness Studio Management System** integrates an Access database, Excel fr
 - Tracking revenue by class type and trainer specialization
 - Managing client-specific pending bookings
 
-This system simplifies operational tasks, helping fitness studio owners and staff save time, reduce errors, and improve business management. 
+This system simplifies operational tasks, helping fitness studio owners and staff save time, reduce errors, and improve business management.
 
 ## Features
 
@@ -51,38 +51,31 @@ The VBA middleware links the Excel front-end to the Access database. Key modules
 - **SaveBookingsToDatabaseModule**: Saves new bookings entered by users to the database.
 - **PendingClientDetailsModule**: Retrieves pending bookings for a specific client based on their ID.
 
-## Getting Started
+## Files Description
 
-To use the system:
+1. **FitnessStudioManagement.accdb**: This is the Microsoft Access database file that stores all the data related to clients, trainers, class types, and bookings. The database contains four key tables: `Clients`, `Trainers`, `ClassTypes`, and `ClientBookings`, and is used to manage and retrieve data in the system.
+   
+2. **FitnessStudioManagement.xlsm**: This is the Excel workbook that serves as the front-end for the application. It includes four worksheets for managing bookings, revenue insights, adding new bookings, and viewing pending bookings. It also contains embedded VBA code that interacts with the database to perform various operations such as loading, saving, and querying data.
 
-### Installation:
+## Setup Instructions
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/fitness-studio-management.git
-    ```
-2. Open the `FitnessStudioManagement.xlsx` Excel file.
-3. Ensure Microsoft Access is installed to connect to the Access database.
-4. Set up the database and link it with the Excel file as per the instructions provided.
+Follow these steps to set up and use the Fitness Studio Management System:
 
-### Usage:
+1. **Download all files** from the repository.
+2. Place **FitnessStudioManagement.xlsm** and **FitnessStudioManagement.accdb** in the same folder.
+3. Open **FitnessStudioManagement.xlsm** in Microsoft Excel.
+4. **Enable macros** to use all the application features.
+
+### Usage Instructions:
 
 - **Load Bookings**: Click the "Load Bookings from Database" button to fetch and display all booking records.
-- **Add New Booking**: Enter new booking details in the "Add_New_Booking" sheet and click "Save Bookings to Database."
-- **View Pending Bookings**: Use the "ClientPendingBookings" sheet to check pending bookings for specific clients.
+- **Add New Booking**: Enter new booking details in the "Add_New_Booking" sheet and click "Save Bookings to Database" to add it.
+- **View Pending Bookings**: Use the "ClientPendingBookings" sheet to check pending bookings for a specific client.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch.
-3. Implement your changes.
-4. Submit a pull request with a description of your changes.
 
 ## Future Enhancements
 
@@ -92,6 +85,3 @@ Contributions are welcome! To contribute:
 - **Automated Notifications**: Integrate email notifications for booking confirmations and cancellations.
 - **Cloud Integration**: Host the database in the cloud and transition to a web-based interface for greater scalability.
 
-## Contact
-
-For questions or feedback, please contact [your email here].
