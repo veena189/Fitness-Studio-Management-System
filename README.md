@@ -63,8 +63,9 @@ Follow these steps to set up and use the Fitness Studio Management System:
 
 1. **Download all files** from the repository.
 2. Place **FitnessStudioManagement.xlsm** and **FitnessStudioManagement.accdb** in the same folder.
-3. Open **FitnessStudioManagement.xlsm** in Microsoft Excel.
-4. **Enable macros** to use all the application features.
+3. Go to properties of the **FitnessStudioManagement.xlsm** file and click on trust settings in security to enable macros
+4. Open **FitnessStudioManagement.xlsm** in Microsoft Excel.
+5. **Enable macros** to use all the application features.
 
 ### Usage Instructions:
 
